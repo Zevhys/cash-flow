@@ -1,7 +1,7 @@
 import DataTable from "datatables.net-bs5";
 import { table } from "./table";
 
-const rupiah = Intl.NumberFormat("id-ID", {
+export const rupiah = Intl.NumberFormat("id-ID", {
   style: "currency",
   currency: "IDR",
   minimumFractionDigits: 0,
@@ -27,7 +27,7 @@ document.getElementById("addRow").addEventListener("click", () => {
   // console.log(" Item amount: ", amount);
   // console.log(" Item date: ", itemDate.value);
 
-  table.row.add([itemName.value, rupiah.format(amount), itemDate.value]).draw(false);
+  table.row.add([itemName.value, amount, itemDate.value]).draw(false);
 
   // console.log(table.length);
   // console.log(table.data()[0]);
