@@ -21,5 +21,4 @@ let counter = 1;
 
 document.querySelector("#addRow").addEventListener("click", addNewRow);
 
-// Automatically add a first row of data
 addNewRow();
