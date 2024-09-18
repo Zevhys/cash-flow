@@ -78,3 +78,26 @@ div.row:nth-child(3) > div:nth-child(1) {
   outline: 0;
   filter: brightness(150%);
 }
+
+.col-right {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1em;
+}
+
+#transaction-form {
+  max-width: 300px;
+  width: 300px;
+}
+
+.fixedHeader-floating {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+  #transaction-form {
+    max-width: 100%;
+    margin: auto;
+    padding: 1em;
+  }
+}

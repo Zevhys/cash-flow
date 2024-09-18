@@ -11,54 +11,76 @@
 
   <title>Cash Flow</title>
 
-  <link rel="icon" href="./icon.svg">
+  <link rel="icon" href="./icon.ico">
 </head>
 
 <body data-bs-theme="dark">
   <div class="container">
     <div class="row my-4">
-      <div class="card col-lg-12 mb-3 p-md-3" style="max-width: 380px;">
 
-        <div class="mb-3">
-          <label for="item-name" class="form-label text-white">Name</label>
-          <input type="text" class="form-control" id="item-name" placeholder="Enter Name" required minlength="5"
-            maxlength="50" autocomplete="off" spellcheck="false" pattern=".*\S+.*"
-            title="Please enter a combination of letters and numbers, and avoid only spaces">
-        </div>
+      <div class="col-md-auto">
+        <form class="card mb-3 p-md-3 col-right mt-4" id="transaction-form">
 
-        <div class="mb-3">
-          <label for="item-amount" class="form-label text-white">Amount</label>
-          <input type="number" class="form-control" id="item-amount" placeholder="Rp. 20,000" required min="1000"
-            max="10000000">
-        </div>
+          <div class="mb-3">
+            <label for="item-name" class="form-label text-white">Name</label>
+            <input type="text" class="form-control" id="item-name" placeholder="Transaction" required minlength="3"
+              maxlength="50" autocomplete="off" spellcheck="false">
+          </div>
 
-        <div class="mb-3">
-          <label for="item-date" class="form-label text-white">Date</label>
-          <input type="date" class="form-control" id="item-date" required>
-        </div>
+          <div class="mb-3">
+            <label for="item-amount" class="form-label text-white">Amount</label>
+            <input type="number" class="form-control" id="item-amount" placeholder="Rp. 20,000" required min="1000"
+              max="10000000" step="100">
+          </div>
 
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="expense-type" id="toggle-income" autocomplete="off" checked>
-          <label class="btn btn-outline-primary text-white" for="toggle-income">Income</label>
+          <div class="mb-3">
+            <label for="item-date" class="form-label text-white">Date</label>
+            <input type="date" class="form-control" id="item-date" required>
+          </div>
 
-          <input type="radio" class="btn-check" name="expense-type" id="toggle-expense" autocomplete="off">
-          <label class="btn btn-outline-primary text-white" for="toggle-expense">Expense</label>
-        </div>
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="expense-type" id="toggle-income" autocomplete="off" checked>
+            <label class="btn btn-outline-primary text-white" for="toggle-income">Income</label>
 
-        <button type="button" id="addRow" class="btn btn-primary mt-3">Add Transaction</button>
+            <input type="radio" class="btn-check" name="expense-type" id="toggle-expense" autocomplete="off">
+            <label class="btn btn-outline-primary text-white" for="toggle-expense">Expense</label>
+          </div>
+
+          <button type="submit" id="add-row" class="btn btn-primary mt-3">Add Transaction</button>
+
+          <div class="card my-2 mt-3">
+            <div class="row p-2">
+              <div class="col text-center">
+                <div>Income</div>
+                <div id="total-income" class="text-success"></div>
+              </div>
+              <div class="col text-center">
+                <div>Expense</div>
+                <div id="total-expense" class="text-danger"></div>
+              </div>
+            </div>
+            <div class="row p-2 mb-1">
+              <div class="col text-center">
+                <div>Total</div>
+                <div id="total-all"></div>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
 
-      <table id="main-table" class="table table-striped table-bordered text-center my-3" style="width:100%;">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Ammount</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-      </table>
+      <div class="col">
+        <table id="main-table" class="table table-striped table-bordered text-center my-3" style="width:100%;">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Ammount</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
-  </div>
   </div>
 </body>
 

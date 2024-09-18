@@ -1,6 +1,8 @@
 // import jQuery from "jquery";
 
-import { rupiah } from "./input";
+import { rupiah, updateTableData } from "./input";
+import { loadTableData } from "./storage";
+
 import DataTable from "datatables.net-bs5";
 
 import "datatables.net-buttons-bs5";
@@ -10,6 +12,7 @@ import "datatables.net-fixedheader-bs5";
 import "datatables.net-responsive-bs5";
 
 export const table = new DataTable("#main-table", {
+  data: loadTableData(),
   responsive: true,
   fixedHeader: true,
   columns: [
@@ -33,6 +36,8 @@ export const table = new DataTable("#main-table", {
   ],
 });
 
+updateTableData();
+
 function createEditButtons(data) {
   let container = document.createElement("div");
   container.innerHTML = data;
@@ -46,6 +51,7 @@ function createEditButtons(data) {
   btnDelete.setAttribute("class", "mx-3 btn-delete");
   btnDelete.addEventListener("click", () => {
     table.row($(btnDelete).parents("tr")).remove().draw();
+    updateTableData();
   });
 
   containerBtn.appendChild(btnDelete);
