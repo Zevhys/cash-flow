@@ -1,0 +1,106 @@
+* {
+  color: white !important;
+  font-family: sans-serif;
+}
+
+input:focus,
+select:focus,
+.page-link {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.dt-length {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.dt-search {
+  color: white;
+}
+
+div.row:nth-child(3) > div:nth-child(1) {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+#main-table .date-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#main-table tr:not(:hover) .action-btn {
+  opacity: 0;
+}
+
+#main-table tr .action-btn {
+  display: flex;
+  justify-content: right;
+  position: absolute !important;
+  right: 0;
+  width: 100%;
+  top: 0;
+  transition: 0.1s ease;
+}
+
+#main-table tr .action-btn button {
+  padding: 0 !important;
+}
+
+.btn-delete {
+  background: 0;
+  border: 0;
+  outline: 0;
+  filter: brightness(150%);
+  margin-right: -0.21em !important;
+  margin-top: -0.2em !important;
+}
+
+.col-right {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1em;
+}
+
+#transaction-form {
+  max-width: 300px;
+  width: 300px;
+}
+
+.fixedHeader-floating {
+  margin-top: 0 !important;
+}
+
+#total-income {
+  color: #28a745 !important;
+}
+
+#total-expense {
+  color: #dc3545 !important;
+}
+
+@media (max-width: 768px) {
+  #transaction-form {
+    max-width: 100%;
+    margin: auto;
+    padding: 1em;
+  }
+}
