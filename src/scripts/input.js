@@ -12,7 +12,6 @@ export const rupiah = Intl.NumberFormat("id-ID", {
 const itemName = document.getElementById("item-name");
 const itemAmount = document.getElementById("item-amount");
 const itemDate = document.getElementById("item-date");
-// const toggleIncome = document.getElementById("toggle-income");
 const toggleExpense = document.getElementById("toggle-expense");
 
 const totalIncomeEl = document.getElementById("total-income");
@@ -33,15 +32,8 @@ document.getElementById("transaction-form").addEventListener("submit", (ev) => {
     amount *= -1;
   }
 
-  // console.log(" Item name: ", itemName.value);
-  // console.log(" Item amount: ", amount);
-  // console.log(" Item date: ", itemDate.value);
-
   table.row.add([itemName.value, amount, itemDate.value]).draw(false);
 
-  // console.log(table.length);
-  // console.log(table.data()[0]);
-  // console.log(table.rows().data());
   updateTableData();
   saveTableData();
 });
@@ -54,14 +46,11 @@ function updateTotal() {
 
 export function updateTableData() {
   let tableData = table.rows().data();
-  // console.log(tableData);
-  // console.log("-".repeat(20));
   totalIncome = 0;
   totalExpense = 0;
 
   for (let index = 0; index < tableData.length; index++) {
     const element = tableData[index];
-    console.log(element);
 
     if (element[1] >= 0) {
       totalIncome += element[1];
