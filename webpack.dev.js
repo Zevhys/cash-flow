@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -16,6 +17,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "./src/assets/*",
+          to: "./assets/[name][ext]",
+        },
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -23,7 +32,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: "asset/resource",
         generator: {
-            filename: "./fonts/[name][ext]",
+          filename: "./fonts/[name][ext]",
         },
       },
       {
@@ -34,6 +43,6 @@ module.exports = {
         test: /\.json$/,
         loader: "json-loader",
       },
-    ]
+    ],
   },
-}
+};

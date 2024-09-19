@@ -35,7 +35,6 @@ document.getElementById("transaction-form").addEventListener("submit", (ev) => {
   table.row.add([itemName.value, amount, itemDate.value]).draw(false);
 
   updateTableData();
-  saveTableData();
 });
 
 function updateTotal() {
@@ -62,4 +61,6 @@ export function updateTableData() {
   totalAll = totalIncome + totalExpense;
 
   updateTotal();
+
+  saveTableData();
 }

@@ -1,6 +1,6 @@
-html {
-  font-family: sans-serif;
+* {
   color: white !important;
+  font-family: sans-serif;
 }
 
 input:focus,
@@ -70,6 +70,8 @@ div.row:nth-child(3) > div:nth-child(1) {
   border: 0;
   outline: 0;
   filter: brightness(150%);
+  margin-right: -0.21em !important;
+  margin-top: -0.2em !important;
 }
 
 .col-right {
@@ -85,6 +87,14 @@ div.row:nth-child(3) > div:nth-child(1) {
 
 .fixedHeader-floating {
   margin-top: 0 !important;
+}
+
+#total-income {
+  color: #28a745 !important;
+}
+
+#total-expense {
+  color: #dc3545 !important;
 }
 
 @media (max-width: 768px) {

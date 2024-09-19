@@ -1,5 +1,3 @@
-// import jQuery from "jquery";
-
 import { rupiah, updateTableData } from "./input";
 import { loadTableData } from "./storage";
 

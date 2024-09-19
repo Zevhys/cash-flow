@@ -12,7 +12,7 @@
 
   <title>Cash Flow</title>
 
-  <link rel="icon" href="./icon.svg">
+  <link rel="icon" href="./assets/icon.svg">
 </head>
 
 <body data-bs-theme="dark">
@@ -23,46 +23,46 @@
         <form class="card mb-3 p-md-3 col-right mt-4" id="transaction-form">
 
           <div class="mb-3">
-            <label for="item-name" class="form-label text-white">Name</label>
-            <input type="text" class="form-control" id="item-name" placeholder="Transaction" required minlength="3"
-              maxlength="50" autocomplete="off" spellcheck="false" pattern=".*\S.*"
+            <label for="item-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="item-name" placeholder="Transaction Name" required minlength="3"
+              maxlength="50" autocomplete="off" spellcheck="true" pattern=".*\S.*"
               title="Please enter at least one non-space character">
           </div>
 
           <div class="mb-3">
-            <label for="item-amount" class="form-label text-white">Amount</label>
+            <label for="item-amount" class="form-label">Amount</label>
             <input type="number" class="form-control" id="item-amount" placeholder="Rp. 20,000" required min="1000"
               max="10000000" step="100">
           </div>
 
           <div class="mb-3">
-            <label for="item-date" class="form-label text-white">Date</label>
+            <label for="item-date" class="form-label">Date</label>
             <input type="date" class="form-control" id="item-date" required>
           </div>
 
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
             <input type="radio" class="btn-check" name="expense-type" id="toggle-income" autocomplete="off" checked>
-            <label class="btn btn-outline-primary text-white" for="toggle-income">Income</label>
+            <label class="btn btn-outline-primary" for="toggle-income">Income</label>
 
             <input type="radio" class="btn-check" name="expense-type" id="toggle-expense" autocomplete="off">
-            <label class="btn btn-outline-primary text-white" for="toggle-expense">Expense</label>
+            <label class="btn btn-outline-primary" for="toggle-expense">Expense</label>
           </div>
 
           <button type="submit" id="add-row" class="btn btn-primary mt-3">Add Transaction</button>
 
           <div class="card my-2 mt-3">
             <div class="row p-2">
-              <div class="col text-center text-white">
+              <div class="col text-center">
                 <div>Income</div>
-                <div id="total-income" class="text-success"></div>
+                <div id="total-income"></div>
               </div>
-              <div class="col text-center text-white">
+              <div class="col text-center">
                 <div>Expense</div>
-                <div id="total-expense" class="text-danger"></div>
+                <div id="total-expense"></div>
               </div>
             </div>
             <div class="row p-2 mb-1">
-              <div class="col text-center text-white">
+              <div class="col text-center">
                 <div>Total</div>
                 <div id="total-all"></div>
               </div>
