@@ -52,20 +52,13 @@ div.row:nth-child(3) > div:nth-child(1) {
 }
 
 #main-table tr .action-btn {
-  /* display: none; */
   display: flex;
-  /* align-items: right; */
   justify-content: right;
   position: absolute !important;
   right: 0;
   width: 100%;
   top: 0;
-  /* height: 100%; */
   transition: 0.1s ease;
-
-  /* outline: 2px solid red; */
-
-  /* left: 100%; */
 }
 
 #main-table tr .action-btn button {
