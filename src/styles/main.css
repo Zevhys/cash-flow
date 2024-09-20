@@ -94,7 +94,7 @@ div.row:nth-child(3) > div:nth-child(1) {
 }
 
 #total-expense {
-  color: #dc3545 !important;
+  color: #f8d7da !important;
 }
 
 @media (max-width: 768px) {
