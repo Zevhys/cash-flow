@@ -1,6 +1,5 @@
 * {
   color: white !important;
-  font-family: sans-serif;
 }
 
 input:focus,
@@ -25,11 +24,6 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 1em;
-  color: white;
-}
-
-.dt-search {
-  color: white;
 }
 
 div.row:nth-child(3) > div:nth-child(1) {
