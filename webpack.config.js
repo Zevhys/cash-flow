@@ -15,6 +15,9 @@ module.exports = {
   },
 
   plugins: [
+    new CopyPlugin({
+      patterns: ["./src/robots.txt"],
+    }),
     new HtmlBundlerPlugin({
       entry: {
         index: "./src/index.html",
