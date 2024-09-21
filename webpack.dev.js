@@ -1,21 +1,35 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlBundlerPlugin = require("html-bundler-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: {
-    vendor: "./src/vendor.js",
-    index: "./src/index.js",
-  },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
+    new HtmlBundlerPlugin({
+      entry: {
+        index: "./src/index.html",
+      },
+      js: {
+        filename: "[name].js",
+      },
+      css: {
+        filename: "[name].css",
+      },
+      preload: [
+        {
+          test: /\.s?css$/,
+          as: "style",
+        },
+        {
+          test: /\.(js)$/,
+          as: "script",
+        },
+      ],
     }),
     new CopyPlugin({
       patterns: [
@@ -32,16 +46,25 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: "asset/resource",
         generator: {
-          filename: "./fonts/[name][ext]",
+          filename: "./fonts/[contenthash][ext][query]",
+        },
+      },
+      {
+        test: /\.(ico|png|webp|svg)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "./assets/[contenthash][ext][query]",
         },
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ["css-loader"],
       },
       {
-        test: /\.json$/,
-        loader: "json-loader",
+        test: /\.txt$/,
+        generator: {
+          filename: "./[name][ext]",
+        },
       },
     ],
   },
