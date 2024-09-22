@@ -1,4 +1,3 @@
-// import DataTable from "datatables.net-bs5";
 import { table } from "./table";
 import { saveTableData } from "./storage";
 
