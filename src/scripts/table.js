@@ -10,7 +10,11 @@ export const table = new DataTable("#main-table", {
   responsive: true,
   fixedHeader: true,
   columns: [
-    null,
+    {
+      render: (data) => {
+        return data;;
+      },
+    },
     {
       render: (data) => {
         return rupiah.format(parseFloat(data));

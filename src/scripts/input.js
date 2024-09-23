@@ -21,7 +21,7 @@ let totalIncome = 0;
 let totalExpense = 0;
 let totalAll = 0;
 
-document.getElementById("item-date").valueAsDate = new Date();
+itemDate.valueAsDate = new Date();
 
 document.getElementById("transaction-form").addEventListener("submit", (ev) => {
   ev.preventDefault();
