@@ -11,5 +11,5 @@ updates:
       interval: "weekly"
     versioning-strategy: increase-if-necessary
     reviewers:
-      - "nndda"
+      - "Zevhys"
     target-branch: "dev"
