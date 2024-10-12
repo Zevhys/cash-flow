@@ -12,7 +12,4 @@ The Cash Flow Tracker is a web-based tool designed to help users efficiently tra
 
 #
 > [!NOTE]  
-> <b>This app is ideal for individuals looking to easily manage their personal or business finances.</b>
-
-> [!NOTE]  
 > <b>I am currently working on a project in collaboration with my friend, [@nndda](https://github.com/nndda)</b>
