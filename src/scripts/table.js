@@ -12,7 +12,7 @@ export const table = new DataTable("#main-table", {
   columns: [
     {
       render: (data) => {
-        return data;;
+        return data;
       },
     },
     {
@@ -21,7 +21,7 @@ export const table = new DataTable("#main-table", {
       },
     },
     {
-      render: (data, type, row, meta) => {
+      render: (data) => {
         return createEditButtons(data);
       },
     },
@@ -42,6 +42,7 @@ function createEditButtons(data) {
   btnDelete.innerHTML = `<img src="https://s2.svgbox.net/hero-solid.svg?ic=backspace&color=dc3545" width="32" height="32">`;
   btnDelete.setAttribute("class", "mx-3 btn-delete");
   btnDelete.addEventListener("click", () => {
+    // eslint-disable-next-line
     table.row($(btnDelete).parents("tr")).remove().draw();
     updateTableData();
   });
