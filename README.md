@@ -1,11 +1,11 @@
-# expense-tracker
+# expense-tracker [![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml) [![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml)
 The Cash Flow Tracker is a web-based tool designed to help users efficiently track their income and expenses. It provides an intuitive interface where users can input financial data and monitor their cash flow over time. The tool is responsive.
 
+<div align="center">
+  <img src="preview.png" height="350px">
+</div>
 
-[![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml)
-[![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml)
-
-# Techonologies
+# Tech Stack
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=ffffff)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=ffffff)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=ffffff)
