@@ -17,6 +17,19 @@ The Cash Flow Tracker is a web-based tool designed to help users efficiently tra
 ![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=white)
 ![](https://img.shields.io/badge/Font%20Awesome-528DD7?style=flat-square&logo=fontawesome&logoColor=ffffff)
 
+
+# Installation
+```bash
+# clone repository 
+git clone https://github.com/Zevhys/cash-flow .
+
+# Start a server in development mode on port 8080
+npm run start
+
+# Build the app and output it in `/dist`
+npm run build
+```
+
 # Collaborator
 > [!NOTE]  
 > <b>I am currently working on a project in collaboration with my friend, [@nndda](https://github.com/nndda)</b>
