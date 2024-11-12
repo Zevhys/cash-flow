@@ -1,6 +1,6 @@
 # expense-tracker 
 [![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/cash-flow)](https://github.com/Zevhys/cash-flow/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/cash-flow)
-[![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml) [![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml)
+[![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/cash-flow/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml)
 
 The Cash Flow Tracker is a web-based tool designed to help users efficiently track their income and expenses. It provides an intuitive interface where users can input financial data and monitor their cash flow over time. The tool is responsive.
 
