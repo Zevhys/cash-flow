@@ -1,14 +1,27 @@
 {
   "name": "expense-tracker",
+  "description": "help users efficiently track their income and expenses",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --port 8080",
     "build": "webpack --config webpack.config.js"
   },
-  "private": true,
+  "keywords": [
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "node.js",
+    "webpack",
+    "front-end"
+  ],
   "author": "Zevhys",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zevhys/cash-flow"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "datatables.net-bs5": "^2.1.6",
@@ -30,7 +43,7 @@
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4",
+    "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.1.0"
   }
 }
