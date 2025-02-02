@@ -28,6 +28,9 @@ npm run start
 
 # Build the app and output it in `/dist`
 npm run build
+
+# Running ESLint
+- npx eslint .
 ```
 
 # Collaborator
