@@ -19,7 +19,7 @@ The Cash Flow Tracker is a web-based tool designed to help users efficiently tra
 
 
 # Installation
-```bash
+<pre>
 # clone repository 
 git clone https://github.com/Zevhys/cash-flow .
 
@@ -31,7 +31,7 @@ npm run build
 
 # Running ESLint
 - npx eslint .
-```
+</pre>
 
 # Collaborator
 > [!NOTE]  
