@@ -1,6 +1,5 @@
 # expense-tracker 
-[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/cash-flow)](https://github.com/Zevhys/cash-flow/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/cash-flow)
-[![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/cash-flow/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
+[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/cash-flow)](https://github.com/Zevhys/cash-flow/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/cash-flow) [![Issues Welcome](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](https://github.com/Zevhys/cash-flow/issues) [![CodeQL](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/cash-flow/actions/workflows/codeql.yml) [![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](https://github.com/Zevhys/cash-flow/pulls) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/cash-flow/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/cash-flow/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
 
 The Cash Flow Tracker is a web-based tool designed to help users efficiently track their income and expenses. It provides an intuitive interface where users can input financial data and monitor their cash flow over time. The tool is responsive.
 
@@ -19,7 +18,7 @@ The Cash Flow Tracker is a web-based tool designed to help users efficiently tra
 
 
 # Installation
-```bash
+<pre>
 # clone repository 
 git clone https://github.com/Zevhys/cash-flow .
 
@@ -28,7 +27,10 @@ npm run start
 
 # Build the app and output it in `/dist`
 npm run build
-```
+
+# Running ESLint
+- npx eslint .
+</pre>
 
 # Collaborator
 > [!NOTE]  
